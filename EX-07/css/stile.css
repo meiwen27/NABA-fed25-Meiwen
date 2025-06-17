@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(201, 203, 202);
+}
+
+.frame {
+    width: 100%;
+    max-width: 100vw;    
+    aspect-ratio: 16 / 9;  
+    background-color: lightgray;
+    border: 0px solid rgb(255, 255, 255);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+  }
+  
+  .image-box {
+    width: 800px;        /* 框的寬度 */
+    height: 700px;       /* 框的高度 */
+    border: 0px solid #333;
+    overflow: hidden;    /* 超出部分隱藏 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain; /* 確保圖片等比例縮放且完全顯示在框內 */
+  }
+  
+  
+  .horizontal-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-50%);
+  }
+  
+  .vertical-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-50%);
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Noto Sans Japanese', sans-serif;
+  }
+  
+  
+  .copy1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 130px;
+    letter-spacing: 2px;
+    line-height: 1.1;
+  }
+  
+  .copy2 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px (2rem, 10vw, 10rem);
+    letter-spacing: 2px;
+    line-height: 1.1;
+  }
+  

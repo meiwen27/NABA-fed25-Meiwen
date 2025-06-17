@@ -1,0 +1,106 @@
+h1 {
+  color: blueviolet;}
+
+.cerchio{
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  /* transition: width 2s; */
+  /* transition: transform 2s; */
+  transition: all 2s;
+  }
+
+.cerchio:hover{
+  width: 200px;
+  transform: rotate(360deg);
+  /* transform:scale(100); ---->會失真，所以用下面的fontsize */
+  font-size: 1000px;
+}  
+
+.cerchio div{
+  color: rgb(0, 60, 255);
+  width: 100%;
+  text-align: center;
+}
+
+/* #hexagon {
+  position: relative;
+  width: 100px;
+  height: 57.735px;
+  background-color: #64C7CC;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  
+  animation-name: cambiaColore;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes cambiaColore {
+  0% {background-color: #64C7CC;   left:0px;}
+  25% {background-color: #FF5733;  left:100px}
+  50% {background-color: #33FF57;  left:-100px}
+  75% {background-color: #3357FF;  left:0}
+
+}
+
+
+#hexagon:before {
+  content: "";
+  position: absolute;
+  top: -28.867px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.867px solid #64C7CC;
+}
+
+#hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #64C7CC;
+}
+ */
+
+.card{
+  background-color: #33FF57;
+  width: 150px;
+  height: 250px;
+  margin-left: 150px;
+}
+
+.card .card{
+  background-color: blanchedalmond;
+  width: 150px;
+  height: 250px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-radius 2s;
+  cursor:progress;
+}
+
+.card .card:hover{
+  border-radius: 60px;
+
+}

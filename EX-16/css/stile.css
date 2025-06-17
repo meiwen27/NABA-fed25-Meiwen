@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(255, 226, 196);
+}
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+
+.un-buon-partito {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+.un-partito-migliore {
+      offset-path: path("M20,20 C20,100 200,0 200,100");
+  animation: move 3000ms infinite alternate ease-in-out;
+  width: 40px;
+  height: 40px;
+  background: cyan;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}

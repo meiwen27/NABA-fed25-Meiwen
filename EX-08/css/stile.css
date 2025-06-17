@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(232, 232, 232);}
+
+.box-model-test{
+border: 20px solid black;
+margin-bottom: 20px;
+padding: 20px;
+width: 200px;
+}
+
+.box-model-test-01{
+    background-color: rgb(193, 251, 255);
+    box-sizing: border-box;
+}
+
+.box-model-test-02{
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.box-model-test-03{
+    background-color: white;
+    box-sizing: border-box;
+}
+a:link{
+    color: red;
+    text-decoration:none ;
+}
+
+a:visited{
+    color:yellowgreen;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+a:active{
+    color: green;
+}
+
+a:focus{
+    color: rgb(31, 7, 255);
+}

@@ -1,0 +1,71 @@
+body { 
+  background-color: antiquewhite;
+  padding-top: 40px;
+
+}
+  
+
+.container{
+  position: relative;
+  border: 1px solid white;
+  height: 900px;
+  
+}
+
+  .container .son{
+    border: 1px solid rgb(43, 43, 43);
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* hierarcy experimentations, please spippolate */
+  .static{
+    position: static;
+    background-color: lightblue;
+    box-shadow: inset 0 0 10px #31302e;
+  }
+
+
+.container > .son.static {
+  position: static;
+  background-color: lightcoral; 
+}
+
+  .relative{
+    position: relative;
+    top: 5px;  
+    left:100px;
+  }
+  .absolute{
+    position: absolute;
+    top: 0;  
+    right:0;
+    background-color: white;
+  }
+
+  .fixed{
+    position: fixed;
+    top: -10px;  
+    left:-10px;
+    width:100% !important;
+    height: 40px !important;
+    background-color: lightgreen;
+    color: white;
+    border:none !important;
+    
+    /* -webkit-box-shadow: 5px 5px 15px 5px #2f352d;  */
+    box-shadow: 5px 5px 15px 5px #51785c;
+  }
+
+  .container2 .son{
+    background-color: lightblue !important;
+
+  }
+
+  .container2 > .son{
+    background-color: rgb(255, 144, 96) !important;
+
+  }
